@@ -1,5 +1,7 @@
 package com.cybertek.jdbc.day1;
 
+import com.cybertek.jdbc.day2.DB_Utility;
+
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.List;
@@ -40,5 +42,6 @@ public class GettingMoreInfoAboutResultSet {
             columnNameList.add(rsmd.getColumnName(i));
         }
         System.out.println(columnNameList);
+        DB_Utility.destroy();
     }
 }
